@@ -1,55 +1,55 @@
 const hexagonLayout = [
-    { abbrev: "HI", full_name: "Hawaii", center_x: 0, center_y: 0, src: null },
-    { abbrev: "FL", full_name: "Florida", center_x: 171.4730299, center_y: 0, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/florida_family-photo%20copy.webp" },
-    { abbrev: "GA", full_name: "Georgia", center_x: 161.9467505, center_y: 16.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/georgia_family-photo%20copy.webp" },
-    { abbrev: "TX", full_name: "Texas", center_x: 85.736515, center_y: 16.5, src: null },
-    { abbrev: "OK", full_name: "Oklahoma", center_x: 76.2102355, center_y: 33, src: null },
-    { abbrev: "LA", full_name: "Louisiana", center_x: 95.2627944, center_y: 33, src: null },
-    { abbrev: "AL", full_name: "Alabama", center_x: 133.3679122, center_y: 33, src: null },
-    { abbrev: "SC", full_name: "South Carolina", center_x: 152.4204711, center_y: 33, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/south-carolina_family-photo%20copy.webp" },
-    { abbrev: "NC", full_name: "North Carolina", center_x: 171.4730299, center_y: 33, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/north-carolina_family-photo%20copy.webp" },
-    { abbrev: "DC", full_name: "Washington DC", center_x: 180.9993094, center_y: 49.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/dc_family-photo%20copy.webp" },
-    { abbrev: "VA", full_name: "Virginia", center_x: 161.9467505, center_y: 49.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/virginia_family-photo%20copy.webp" },
-    { abbrev: "TN", full_name: "Tennessee", center_x: 142.8941916, center_y: 49.5, src: null },
-    { abbrev: "MS", full_name: "Mississippi", center_x: 123.8416327, center_y: 49.5, src: null },
-    { abbrev: "AR", full_name: "Arkansas", center_x: 104.7890739, center_y: 49.5, src: null },
-    { abbrev: "KS", full_name: "Kansas", center_x: 85.736515, center_y: 49.5, src: null },
-    { abbrev: "NM", full_name: "New Mexico", center_x: 66.6839561, center_y: 49.5, src: null },
-    { abbrev: "AZ", full_name: "Arizona", center_x: 47.6313972, center_y: 49.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/arizona_family-photo%20copy.webp" },
-    { abbrev: "CA", full_name: "California", center_x: 19.0525589, center_y: 66, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/california_family-photo%20copy.webp" },
-    { abbrev: "NV", full_name: "Nevada", center_x: 38.1051178, center_y: 66, src: null },
-    { abbrev: "UT", full_name: "Utah", center_x: 57.1576766, center_y: 66, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/utah_family-photo%20copy.webp" },
-    { abbrev: "CO", full_name: "Colorado", center_x: 76.2102355, center_y: 66, src: null },
-    { abbrev: "NE", full_name: "Nebraska", center_x: 95.2627944, center_y: 66, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/nebraska_family-photo%20copy.webp" },
-    { abbrev: "MO", full_name: "Missouri", center_x: 114.3153533, center_y: 66, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/missouri_family-photo%20copy.webp" },
-    { abbrev: "KY", full_name: "Kentucky", center_x: 133.3679122, center_y: 66, src: null },
-    { abbrev: "WV", full_name: "West Virginia", center_x: 152.4204711, center_y: 66, src: null },
-    { abbrev: "MD", full_name: "Maryland", center_x: 171.4730299, center_y: 66, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/maryland_family-photo%20copy.webp" },
-    { abbrev: "DE", full_name: "Delaware", center_x: 190.5255888, center_y: 66, src: null },
-    { abbrev: "CT", full_name: "Conneticut", center_x: 219.1044272, center_y: 82.5, src: null },
-    { abbrev: "NJ", full_name: "New Jersey", center_x: 200.0518683, center_y: 82.5, src: null },
-    { abbrev: "PA", full_name: "Pennsylvania", center_x: 180.9993094, center_y: 82.5, src: null },
-    { abbrev: "OH", full_name: "Ohio", center_x: 161.9467505, center_y: 82.5, src: null },
-    { abbrev: "IN", full_name: "Indiana", center_x: 142.8941916, center_y: 82.5, src: null },
-    { abbrev: "IL", full_name: "Illinois", center_x: 123.8416327, center_y: 82.5, src: null },
-    { abbrev: "IA", full_name: "Iowa", center_x: 104.7890739, center_y: 82.5, src: null },
-    { abbrev: "SD", full_name: "South Dakota", center_x: 85.736515, center_y: 82.5, src: null },
-    { abbrev: "WY", full_name: "Wyoming", center_x: 66.6839561, center_y: 82.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/wyoming_family-photo%20copy.webp" },
-    { abbrev: "ID", full_name: "Idaho", center_x: 47.6313972, center_y: 82.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/idaho_family-photo%20copy.webp" },
-    { abbrev: "OR", full_name: "Oregon", center_x: 28.5788383, center_y: 82.5, src: null },
-    { abbrev: "WA", full_name: "Washington", center_x: 38.1051178, center_y: 99, src: null },
-    { abbrev: "MT", full_name: "Montana", center_x: 57.1576766, center_y: 99, src: null },
-    { abbrev: "ND", full_name: "North Dakota", center_x: 76.2102355, center_y: 99, src: null },
-    { abbrev: "MN", full_name: "Minnesota", center_x: 95.2627944, center_y: 99, src: null },
-    { abbrev: "WI", full_name: "Wisconsin", center_x: 114.3153533, center_y: 99, src: null },
-    { abbrev: "MI", full_name: "Michigan", center_x: 152.4204711, center_y: 99, src: null },
-    { abbrev: "NY", full_name: "New York", center_x: 190.5255888, center_y: 99, src: null },
-    { abbrev: "MA", full_name: "Massachusetts", center_x: 209.5781477, center_y: 99, src: null },
-    { abbrev: "RI", full_name: "Rhode Island", center_x: 228.6307066, center_y: 99, src: null },
-    { abbrev: "NH", full_name: "New Hampshire", center_x: 238.156986, center_y: 115.5, src: null },
-    { abbrev: "VT", full_name: "Vermont", center_x: 219.1044272, center_y: 115.5, src: null },
-    { abbrev: "AK", full_name: "Alaska", center_x: 0, center_y: 132, src: null },
-    { abbrev: "ME", full_name: "Maine", center_x: 228.6307066, center_y: 132, src: null }
+    { abbrev: "HI", full_name: "Hawaii", center_x: 0, center_y: 0, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "FL", full_name: "Florida", center_x: 171.4730299, center_y: 0, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/florida_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "GA", full_name: "Georgia", center_x: 161.9467505, center_y: 16.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/georgia_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "TX", full_name: "Texas", center_x: 85.736515, center_y: 16.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "OK", full_name: "Oklahoma", center_x: 76.2102355, center_y: 33, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "LA", full_name: "Louisiana", center_x: 95.2627944, center_y: 33, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "AL", full_name: "Alabama", center_x: 133.3679122, center_y: 33, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "SC", full_name: "South Carolina", center_x: 152.4204711, center_y: 33, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/south-carolina_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "NC", full_name: "North Carolina", center_x: 171.4730299, center_y: 33, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/north-carolina_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "DC", full_name: "Washington DC", center_x: 180.9993094, center_y: 49.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/dc_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "VA", full_name: "Virginia", center_x: 161.9467505, center_y: 49.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/virginia_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "TN", full_name: "Tennessee", center_x: 142.8941916, center_y: 49.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "MS", full_name: "Mississippi", center_x: 123.8416327, center_y: 49.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "AR", full_name: "Arkansas", center_x: 104.7890739, center_y: 49.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "KS", full_name: "Kansas", center_x: 85.736515, center_y: 49.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "NM", full_name: "New Mexico", center_x: 66.6839561, center_y: 49.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "AZ", full_name: "Arizona", center_x: 47.6313972, center_y: 49.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/arizona_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "CA", full_name: "California", center_x: 19.0525589, center_y: 66, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/california_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "NV", full_name: "Nevada", center_x: 38.1051178, center_y: 66, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "UT", full_name: "Utah", center_x: 57.1576766, center_y: 66, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/utah_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "CO", full_name: "Colorado", center_x: 76.2102355, center_y: 66, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "NE", full_name: "Nebraska", center_x: 95.2627944, center_y: 66, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/nebraska_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "MO", full_name: "Missouri", center_x: 114.3153533, center_y: 66, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/missouri_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "KY", full_name: "Kentucky", center_x: 133.3679122, center_y: 66, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "WV", full_name: "West Virginia", center_x: 152.4204711, center_y: 66, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "MD", full_name: "Maryland", center_x: 171.4730299, center_y: 66, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/maryland_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "DE", full_name: "Delaware", center_x: 190.5255888, center_y: 66, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "CT", full_name: "Conneticut", center_x: 219.1044272, center_y: 82.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "NJ", full_name: "New Jersey", center_x: 200.0518683, center_y: 82.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "PA", full_name: "Pennsylvania", center_x: 180.9993094, center_y: 82.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "OH", full_name: "Ohio", center_x: 161.9467505, center_y: 82.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "IN", full_name: "Indiana", center_x: 142.8941916, center_y: 82.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "IL", full_name: "Illinois", center_x: 123.8416327, center_y: 82.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "IA", full_name: "Iowa", center_x: 104.7890739, center_y: 82.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "SD", full_name: "South Dakota", center_x: 85.736515, center_y: 82.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "WY", full_name: "Wyoming", center_x: 66.6839561, center_y: 82.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/wyoming_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "ID", full_name: "Idaho", center_x: 47.6313972, center_y: 82.5, src: "https://raw.githubusercontent.com/adambushman/d3-js-learn-and-practice/refs/heads/master/D3-v.7/Travel%20Map/img/idaho_family-photo%20copy.webp", x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "OR", full_name: "Oregon", center_x: 28.5788383, center_y: 82.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "WA", full_name: "Washington", center_x: 38.1051178, center_y: 99, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "MT", full_name: "Montana", center_x: 57.1576766, center_y: 99, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "ND", full_name: "North Dakota", center_x: 76.2102355, center_y: 99, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "MN", full_name: "Minnesota", center_x: 95.2627944, center_y: 99, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "WI", full_name: "Wisconsin", center_x: 114.3153533, center_y: 99, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "MI", full_name: "Michigan", center_x: 152.4204711, center_y: 99, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "NY", full_name: "New York", center_x: 190.5255888, center_y: 99, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "MA", full_name: "Massachusetts", center_x: 209.5781477, center_y: 99, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "RI", full_name: "Rhode Island", center_x: 228.6307066, center_y: 99, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "NH", full_name: "New Hampshire", center_x: 238.156986, center_y: 115.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "VT", full_name: "Vermont", center_x: 219.1044272, center_y: 115.5, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "AK", full_name: "Alaska", center_x: 0, center_y: 132, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 },
+    { abbrev: "ME", full_name: "Maine", center_x: 228.6307066, center_y: 132, src: null, x_adjust: Math.random() * 50 - 25, y_adjust: Math.random() * 50 - 25 }
 ];
 
 
@@ -79,7 +79,7 @@ function calculateHexagonPoints(center_x, center_y, radius) {
 }
 
 // Function to render a single hexagon
-function renderHexagon(ctx, center_x, center_y, radius, image) {
+function renderHexagon(ctx, center_x, center_y, radius, image, x_adjust = 0, y_adjust = 0) {
     const scale = 0.80;
     const [alt_width, alt_height] = [cHeight * scale, cWidth * scale]
     const [offset_width, offset_height] = [(cHeight * (1 - scale)) / 2, (cWidth * (1 - scale)) / 2]
@@ -122,8 +122,8 @@ function renderHexagon(ctx, center_x, center_y, radius, image) {
     }
 
     // Center the image within the hexagon
-    const drawX = new_center_x - drawWidth / 2;
-    const drawY = new_center_y - drawHeight / 2;
+    const drawX = (new_center_x - drawWidth / 2) + x_adjust;
+    const drawY = (new_center_y - drawHeight / 2) + y_adjust;
 
     // Draw the image scaled to fit inside the hexagon
     ctx.drawImage(image, drawX, drawY, drawWidth, drawHeight);
@@ -146,8 +146,8 @@ function renderHexagon(ctx, center_x, center_y, radius, image) {
 // Function to render all hexagons based on layout
 function renderHexagonLayout(layout, radius, images, ctx) {
     layout.forEach((hex, index) => {
-        const { center_x, center_y } = hex;
-        renderHexagon(ctx, center_x, center_y, radius, images[index]);
+        const { center_x, center_y, x_adjust, y_adjust } = hex;
+        renderHexagon(ctx, center_x, center_y, radius, images[index], x_adjust, y_adjust);
     });
 }
 
@@ -214,18 +214,18 @@ function downloadCanvasAsHighResJPEG() {
 
     // Load images again for high-resolution rendering
     loadImages(hexagonLayout, (images) => {
-      // Render hexagons with the scaled context
-      hexagonLayout.forEach((hex, index) => {
-        renderHexagon(tempCtx, hex.center_x, hex.center_y, hexRadius, images[index]);
-      });
+        // Render hexagons with the scaled context
+        hexagonLayout.forEach((hex, index) => {
+            renderHexagon(tempCtx, hex.center_x, hex.center_y, hexRadius, images[index], hex.x_adjust, hex.y_adjust);
+        });
 
-      // Generate the high-resolution JPEG
-      const downloadLink = document.createElement("a");
-      downloadLink.download = "hexagon-layout-highres.jpg";
-      downloadLink.href = tempCanvas.toDataURL("image/jpeg", 0.9); // Set JPEG quality
-      downloadLink.click();
+        // Generate the high-resolution JPEG
+        const downloadLink = document.createElement("a");
+        downloadLink.download = "hexagon-layout-highres.jpg";
+        downloadLink.href = tempCanvas.toDataURL("image/jpeg", 0.9); // Set JPEG quality
+        downloadLink.click();
     });
-  }
+}
 
 
 
