@@ -31,7 +31,41 @@
             </div>
         </div>
     </div>
+    <div id="myplot">
+    </div>
     <script src="script.js"></script>
+    <script type="module">
+        import * as topojson from "https://cdn.jsdelivr.net/npm/topojson-client@3/+esm";
+        import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
+
+        fetch("us-counties-10m.json")
+            .then(response => response.json())
+            .then(data => {
+                const states = data.objects.states;
+                states.geometries = states.geometries.filter(d => d.properties.name === "Minnesota");
+                const selectedStateGeo = topojson.feature(data, states);
+
+                generatePlot(selectedStateGeo, "#myplot");
+            });
+
+        const generatePlot = (stateGeo, selector) => {
+            const plot = Plot.plot({
+                projection: {
+                    type: "albers-usa", 
+                    domain: stateGeo,
+                    inset: 50,
+                },
+                width: 600, height: 600, 
+                marks: [
+                    Plot.geo(stateGeo, {stroke: "#d4a373", strokeWidth: 3, fillOpacity: 0 }),
+                ]
+            });
+
+            const div = document.querySelector(selector);
+            plot.style.backgroundColor = "#faedcd";
+            div.append(plot);
+        }
+    </script>
 </body>
 
 </html>
